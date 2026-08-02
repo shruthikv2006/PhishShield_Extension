@@ -54,8 +54,26 @@ best_xgb_model.pkl: Trained ML model
 **🎓 Project Context**
 This extension is the implementation part of a research project on phishing detection using machine learning. The goal is to build a practical, scalable solution for securing users against phishing attacks during regular browsing.
 
-📜 License
-This project is open-source and available under the MIT License.
+---
 
-**If you want to use this just download it as a zip and then unzip it in your computer and enable the developer mode in chrome under the extension and load unpacked the Frontend Folder there pin it and you are ready to go**
+## 🌐 Live Deployment (This Fork)
 
+- **Live Backend API:** https://phishshield-extension-y8f0.onrender.com
+- **Status:** Live ✅ (kept awake via automated health-check pings to avoid free-tier cold starts)
+
+### Additions & Improvements in This Fork
+- Deployed the backend live to Render (Free Tier) as a working production API
+- Fixed a `scikit-learn` version mismatch between the trained scaler and runtime environment for reliable, consistent predictions
+- Set up automated keep-alive pinging to eliminate cold-start delays
+- Debugged and validated the full end-to-end pipeline (feature extraction → scaling → prediction)
+- Connected and tested the Chrome Extension against the live backend on real browsing sessions
+
+### 👩‍💻 Maintained By
+**Shruthi Kaituri Vaidyam**
+
+---
+
+📜 **License**
+This project is open-source and available under the MIT License. Original base project by [BKG10](https://github.com/BKG10/PhishShield_Extension).
+
+**If you want to use this:** just download it as a zip, unzip it on your computer, enable Developer Mode in Chrome under Extensions, click "Load unpacked," and select the `Frontend` folder. Pin it and you're ready to go!
