@@ -358,7 +358,7 @@ async function checkForPhishing(url, tabId, isReload = false) {
     }
 
     // Check URL using our ML model
-    const response = await fetch("https://phishshield-11y5.onrender.com/predict_url", {
+    const response = await fetch("https://phishshield-extension-y8f0.onrender.com/predict_url", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
